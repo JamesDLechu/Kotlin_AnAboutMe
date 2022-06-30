@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">An About Me</string>
     <string name="name">Maggie the Pitbull</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">Maggie is a little and cute pitbull which fur color is black and white.\n\nWhen she smiles she brightens everyone\'s day, and with her eyes she melts the heart of even the toughest.\n\nActually, she is around the age of three and is as muscular as any other pitbull, around 34 pounds of weight and due to that she can not jump so high.</string>
+    <string name="camera">White camera</string>
 </resources>
