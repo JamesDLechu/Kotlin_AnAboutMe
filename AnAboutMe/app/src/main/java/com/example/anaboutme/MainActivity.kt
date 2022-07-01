@@ -15,11 +15,13 @@ import com.example.anaboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("Maggie the Pitbull")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding= DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = myName
 
         binding.doneButton.setOnClickListener {
             addNickname( it )
@@ -28,11 +30,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun addNickname(view: View){
         binding.apply {
+            myName?.nickname = nicknameEdit.text.toString()
+            invalidateAll()
+
             nicknameEdit.visibility= View.GONE
             nicknameText.visibility= View.VISIBLE
             view.visibility= View.GONE
-
-            nicknameText.text= nicknameEdit.text
         }
         //Hide keyboard
         val imm= getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
