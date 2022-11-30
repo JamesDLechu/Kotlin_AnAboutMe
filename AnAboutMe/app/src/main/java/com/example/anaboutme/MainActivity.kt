@@ -15,7 +15,7 @@ import com.example.anaboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val myName: MyName = MyName("Maggie the Pitbull")
+    private val myName: MyName = MyName("Maggie the Pit-bull")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
